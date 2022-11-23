@@ -9,6 +9,7 @@ def infomap_worker(filename, outname, seed=123, states=False, **kwargs):
     return {
         "codelength": im.codelength,
         "num_levels": im.num_levels,
-        "num_modules": im.num_top_modules,
+        "num_top_modules": im.num_top_modules,
+        "eff_num_top_modules": im.effective_num_top_modules,
         "outname": outname,
     }
